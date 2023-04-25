@@ -67848,7 +67848,7 @@ Tilemap:
       - {fileID: 21300000, guid: b2f2db10b74c2654db985a6ec6c41bc0, type: 3}
       - {fileID: 21300000, guid: 7f6182c1ccbbea4418d5077d4bd86746, type: 3}
       - {fileID: 21300000, guid: f96aa97aee13fe747994516a00ff1f81, type: 3}
-      m_AnimationSpeed: 3.0000002
+      m_AnimationSpeed: 3
       m_AnimationTimeOffset: 0
       m_IsLooping: 1
   - first: {x: -217, y: -15, z: 0}
@@ -79653,6 +79653,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6550169376748981382, guid: 90b978f481459e84ab1c48285c268fd8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 600
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550169376748981382, guid: 90b978f481459e84ab1c48285c268fd8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 50
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550169376748981382, guid: 90b978f481459e84ab1c48285c268fd8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 340
+      objectReference: {fileID: 0}
+    - target: {fileID: 6550169376748981382, guid: 90b978f481459e84ab1c48285c268fd8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -50
+      objectReference: {fileID: 0}
     - target: {fileID: 6550169376748981383, guid: 90b978f481459e84ab1c48285c268fd8, type: 3}
       propertyPath: m_Value
       value: 50
