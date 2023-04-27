@@ -79758,6 +79758,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: PrimaryWeapon
       objectReference: {fileID: 0}
+    - target: {fileID: 8879501343340393942, guid: da1d4dd62fc9c8e498f983ad23d81e6b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: da1d4dd62fc9c8e498f983ad23d81e6b, type: 3}
 --- !u!1001 &6550169378076791181
