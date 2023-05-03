@@ -15,10 +15,12 @@ namespace Damoeson.Weapons
             private set => currentAttackCounter = value >= numberOfAttacks ? 0 : value;
         }
 
+        public event Action OnEnter;
         public event Action OnExit;
 
         private Animator anim;
-        private GameObject baseGameObject;
+        public GameObject BaseGameObject { get; private set; }
+        public GameObject WeaponSpriteGameObject { get; private set; }
 
         private AnimationEventHandler eventHandler;
 
@@ -34,6 +36,8 @@ namespace Damoeson.Weapons
 
             anim.SetBool("active", true);
             anim.SetInteger("counter", CurrentAttackCounter);
+
+            OnEnter?.Invoke();
         }
 
         private void Exit()
@@ -48,10 +52,12 @@ namespace Damoeson.Weapons
 
         private void Awake()
         {
-            baseGameObject = transform.Find("Base").gameObject;
-            anim = baseGameObject.GetComponent<Animator>();
+            BaseGameObject = transform.Find("Base").gameObject;
+            WeaponSpriteGameObject = transform.Find("WeaponSprite").gameObject;
 
-            eventHandler = baseGameObject.GetComponent<AnimationEventHandler>();
+            anim = BaseGameObject.GetComponent<Animator>();
+
+            eventHandler = BaseGameObject.GetComponent<AnimationEventHandler>();
 
             attackCounterResetTimer = new Timer(attackCounterResetCooldown);
         }
