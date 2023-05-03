@@ -1,3 +1,4 @@
+using Damoeson.Weapons;
 using UnityEngine;
 
 public class Player : MonoBehaviour
@@ -41,6 +42,9 @@ public class Player : MonoBehaviour
 
     private Vector2 workspace;
 
+    private Weapon primaryWeapon;
+    private Weapon secondaryWeapon;
+
     #endregion
 
     #region Unity Callback Functions
@@ -48,6 +52,9 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         Core = GetComponentInChildren<Core>();
+
+        primaryWeapon = transform.Find("PrimaryWeapon").GetComponent<Weapon>();
+        secondaryWeapon = transform.Find("SecondaryWeapon").GetComponent<Weapon>();
 
         StateMachine = new PlayerStateMachine();
 
@@ -62,8 +69,8 @@ public class Player : MonoBehaviour
         DashState = new PlayerDashState(this, StateMachine, playerData, "inAir");
         CrouchIdleState = new PlayerCrouchIdleState(this, StateMachine, playerData, "crouchIdle");
         CrouchMoveState = new PlayerCrouchMoveState(this, StateMachine, playerData, "crouchMove");
-        PrimaryAttackState = new PlayerAttackState(this, StateMachine, playerData, "attack");
-        SecondaryAttackState = new PlayerAttackState(this, StateMachine, playerData, "attack");
+        PrimaryAttackState = new PlayerAttackState(this, StateMachine, playerData, "attack", primaryWeapon);
+        SecondaryAttackState = new PlayerAttackState(this, StateMachine, playerData, "attack", secondaryWeapon);
     }
 
     private void Start()
