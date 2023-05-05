@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aad20f7c3277c454f8976054981a0c17, type: 3}
   m_Name: SlimeBoss_MoveStateData
   m_EditorClassIdentifier: 
-  movementSpeed: 4
+  movementSpeed: 2

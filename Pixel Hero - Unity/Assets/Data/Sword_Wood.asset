@@ -12,5 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c3150b9c63ab2542ae052895231502d, type: 3}
   m_Name: Sword_Wood
   m_EditorClassIdentifier: 
-  <NumberOfAttacks>k__BackingField: 0
-  <componentData>k__BackingField: []
+  <NumberOfAttacks>k__BackingField: 3
+  <componentData>k__BackingField:
+  - rid: 1978586653005709316
+  references:
+    version: 2
+    RefIds:
+    - rid: 1978586653005709316
+      type: {class: WeaponSpriteData, ns: Damoeson, asm: Assembly-CSharp}
+      data:
+        <AttackData>k__BackingField:
+        - <Sprites>k__BackingField:
+          - {fileID: -2116940349, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}
+          - {fileID: -1767078507, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}
+          - {fileID: 1443674629, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}
+          - {fileID: -293465284, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}
+          - {fileID: 671546754, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}
+        - <Sprites>k__BackingField:
+          - {fileID: -1248807895, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}
+          - {fileID: -1671560604, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}
+          - {fileID: 1464790595, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}
+          - {fileID: 111618097, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}
+          - {fileID: -1004750423, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}
+          - {fileID: -131194223, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}
+        - <Sprites>k__BackingField:
+          - {fileID: 2090957480, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}
+          - {fileID: 773746121, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}
+          - {fileID: -1566281774, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}
+          - {fileID: -1809055208, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}
+          - {fileID: -1053505293, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}
+          - {fileID: 1322432233, guid: ea50f56ee4aab2f448e4687681fb5dc9, type: 3}

@@ -12,5 +12,33 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c3150b9c63ab2542ae052895231502d, type: 3}
   m_Name: Sword_Iron
   m_EditorClassIdentifier: 
-  <NumberOfAttacks>k__BackingField: 0
-  <componentData>k__BackingField: []
+  <NumberOfAttacks>k__BackingField: 3
+  <componentData>k__BackingField:
+  - rid: 1978586653005709314
+  references:
+    version: 2
+    RefIds:
+    - rid: 1978586653005709314
+      type: {class: WeaponSpriteData, ns: Damoeson, asm: Assembly-CSharp}
+      data:
+        <AttackData>k__BackingField:
+        - <Sprites>k__BackingField:
+          - {fileID: 2106807090, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
+          - {fileID: 772761038, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
+          - {fileID: -1257415010, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
+          - {fileID: 292947406, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
+          - {fileID: 2134531008, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
+        - <Sprites>k__BackingField:
+          - {fileID: -1588397179, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
+          - {fileID: -110427609, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
+          - {fileID: 685517731, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
+          - {fileID: 1588116114, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
+          - {fileID: 272505563, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
+          - {fileID: -959022182, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
+        - <Sprites>k__BackingField:
+          - {fileID: -1702609105, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
+          - {fileID: -852940443, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
+          - {fileID: 2057009957, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
+          - {fileID: -329684377, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
+          - {fileID: -455950931, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
+          - {fileID: 404972079, guid: 15099714fa0ae7645a4c098170c1436b, type: 3}
