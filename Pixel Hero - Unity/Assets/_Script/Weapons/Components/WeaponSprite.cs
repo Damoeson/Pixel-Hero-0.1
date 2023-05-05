@@ -1,9 +1,6 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-namespace Damoeson
+namespace Damoeson.Weapons.Components
 {
     public class WeaponSprite : WeaponComponent
     {
