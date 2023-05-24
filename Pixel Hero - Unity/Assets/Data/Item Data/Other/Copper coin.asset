@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8594ce6467356d44b8412268114d9c88, type: 3}
   m_Name: Copper coin
   m_EditorClassIdentifier: 
-  Name: 
-  Icon: {fileID: 0}
-  Value: 0
-  Description: 
+  Name: Copper coin
+  Icon: {fileID: 21300000, guid: fbd726b9acbf2d94b92cb6a9a0099587, type: 3}
+  Value: 5
+  CollectedSound: {fileID: 8300000, guid: 767995715caf9db4bbe0639945f76fe1, type: 3}

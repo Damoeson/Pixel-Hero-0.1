@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8594ce6467356d44b8412268114d9c88, type: 3}
   m_Name: Slime Data
   m_EditorClassIdentifier: 
-  Name: 
-  Icon: {fileID: 0}
-  Value: 0
-  Description: 
+  Name: Slime
+  Icon: {fileID: 21300000, guid: d83694bceb3a15c44b194303d5623853, type: 3}
+  Value: 5
+  CollectedSound: {fileID: 8300000, guid: 767995715caf9db4bbe0639945f76fe1, type: 3}

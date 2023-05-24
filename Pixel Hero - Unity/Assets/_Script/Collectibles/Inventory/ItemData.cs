@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace Damoeson
@@ -14,8 +12,10 @@ namespace Damoeson
 
         public int Value;
 
-        public AudioClip CollectedSound;
+        public string Use;
 
         public string Description;
+
+        public AudioClip CollectedSound;
     }
 }

@@ -17,6 +17,10 @@ public class PlayerInputHandler : MonoBehaviour
     public bool JumpInputStop { get; private set; }
     public bool DashInput { get; private set; }
     public bool DashInputStop { get; private set; }
+    public bool InteractInput { get; private set; }
+    public bool InteractInputStop { get; private set; }
+    public bool InventoryInput { get; private set; }
+    public bool InventoryInputStop { get; private set; }
 
     public bool[] AttackInputs { get; private set; }
 
@@ -105,6 +109,34 @@ public class PlayerInputHandler : MonoBehaviour
         }
     }
 
+    public void OnInteractInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            InteractInput = true;
+            InteractInputStop = false;
+        }
+
+        else if (context.canceled)
+        {
+            InteractInputStop = true;
+        }
+    }
+
+    public void OnInventoryInput(InputAction.CallbackContext context)
+    {
+        if (context.started)
+        {
+            InventoryInput = true;
+            InventoryInputStop = false;
+        }
+
+        else if (context.canceled)
+        {
+            InventoryInputStop = true;
+        }
+    }
+
     public void OnDashDirectionInput(InputAction.CallbackContext context)
     {
         RawDashDirectionInput = context.ReadValue<Vector2>();
@@ -120,6 +152,10 @@ public class PlayerInputHandler : MonoBehaviour
     public void UseJumpInput() => JumpInput = false;
 
     public void UseDashInput() => DashInput = false;
+
+    public void UseInteractInput() => InteractInput = false;
+
+    public void UseInventoryInput() => InventoryInput = false;
 
     private void CheckJumpInputHoldTime()
     {
